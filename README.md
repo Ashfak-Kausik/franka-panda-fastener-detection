@@ -6,7 +6,7 @@ This project allows the Panda robot to detect colored objects (Red, Green, or Bl
 ---
 
 ## 🎥 Pick and Place Demo  
-[![Watch the Video](https://img.youtube.com/vi/EM88ld4cCNk/hqdefault.jpg)](https://www.youtube.com/watch?v=EM88ld4cCNk)
+https://github.com/user-attachments/assets/b6a21195-fb3a-4ada-b077-c9c8b236f499
 
 ---
 
