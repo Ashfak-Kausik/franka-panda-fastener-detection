@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'panda_vision'
 
@@ -10,12 +12,14 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/models',
+            glob('panda_vision/models/*.pt')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='utk',
     maintainer_email='kutkarsh706@gmail.com',
-    description='Color detection package for Panda robot vision (RGB object detection)',
+    description='YOLOv12 fastener detection package for Panda robot vision',
     license='MIT',
     extras_require={
         'test': [
@@ -25,6 +29,7 @@ setup(
     entry_points={
         'console_scripts': [
             'color_detector = panda_vision.color_detector:main',
+            'fastener_detector = panda_vision.fastener_detector:main',
         ],
     },
 )
